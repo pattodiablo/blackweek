@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<title>CNT - Black Week</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/formulario.css" type="text/css">
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/ui-lightness/jquery-ui.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="css/mdb.css" >
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js" ></script>
+	<script src="js/mdb.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+	<script src="js/vue.js" ></script>
+  <script src="js/vue-carousel-3d.min.js" ></script>
+	
+</head>
+
+<body>
+	<div class="container">
+<div class="row">
+		<div class="col-1 text-center">	</div>
+	<div class="col-10 text-center">
+
+		<img width="100%" class="img-fluid" src="images/blackweekHeader.png">
+
+	</div>
+	<div class="col-1 text-center">
+</div>
+</div>
+<div class="row">
+	
+		<div class="col-12" id="phones">
+		
+	  <carousel-3d :controls-visible="true" :clickable="true" :display="3" :width='280' :height='560' :border='0' style="background-color: transparent;">
+	   <slide v-for="(slide, i) in slides" :index="0" >
+	   <figure style="background-color: #080605">
+	        <img width="100" src="images/phone1.png">
+	      </figure>
+	    </slide>
+		<slide v-for="(slide, i) in slides" :index="1">
+	    <figure style="background-color: #080605">
+	        <img src="images/phone1.png">
+	      </figure>
+	    </slide>
+		<slide v-for="(slide, i) in slides" :index="2">
+	   <figure style="background-color: #080605">
+	        <img src="images/phone1.png">
+	      </figure>
+	    </slide>
+	    <slide v-for="(slide, i) in slides" :index="3">
+	  <figure style="background-color: #080605">
+	        <img src="images/phone1.png">
+	      </figure>
+	    </slide>
+	    <slide v-for="(slide, i) in slides" :index="4">
+	 <figure style="background-color: #080605">
+	        <img src="images/phone1.png">
+	      </figure>
+	    </slide>
+	    <slide v-for="(slide, i) in slides" :index="5">
+     <figure style="background-color: #080605">
+	        <img src="images/phone1.png">
+	      </figure>
+	    </slide>
+	    <slide v-for="(slide, i) in slides" :index="6">
+	   <figure style="background-color: #080605">
+	        <img src="images/phone1.png">
+	      </figure>
+	    </slide>
+        <slide v-for="(slide, i) in slides" :index="7">
+       <figure style="background-color: #080605">
+            <img src="images/phone1.png">
+          </figure>
+        </slide>
+        <slide v-for="(slide, i) in slides" :index="8">
+       <figure style="background-color: #080605">
+            <img src="images/phone1.png">
+          </figure>
+        </slide>
+        <slide v-for="(slide, i) in slides" :index="9">
+       <figure style="background-color: #080605">
+            <img src="images/phone1.png">
+          </figure>
+        </slide>
+        <slide v-for="(slide, i) in slides" :index="10">
+       <figure style="background-color: #080605">
+            <img src="images/phone1.png">
+          </figure>
+        </slide>
+	  </carousel-3d>
+	</div>
+
+</div>
+<div class="row">
+		<div class="col-3 "></div>
+			<div class="col-6 text-center ">
+				<button data-toggle="modal" data-target="#loquiero" class='btn' style="color: #000; background-color: #B3B3B3; font-weight: bold; font-size:0.6em;"> Lo quiero</button>
+			</div>
+		<div class="col-3 "></div>
+
+</div>
+<div class="row">
+	
+	<div class="col-12">
+		
+		<img width="100%" src="images/footer.png">
+	</div>
+</div>
+
+
+
+</div>
+
+
+<!-- Modal  Form-->
+<div class="col-12">
+	<div class="modal fade" id="loquiero" >
+		<div class="col-1"></div>
+            <div class="modal-dialog" role="document" >
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close close-phone" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 0px; ">
+                        <div class="container formulario-modal" >
+                            <!--Formulario-->
+                            <h4  style="text-align: center; color: #000">Llena el formulario con tus datos personales</h4>
+                            <form class="form-area mt-60 contact-form text-right" id="BlackWeek">
+                                <div class="container">
+                                        <input name="name" placeholder="Nombres" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre'" class="common-input mb-20 form-control" required="" type="text">
+                                        <input name="apname" placeholder="Apellidos" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Apellidos'" class="common-input mb-20 form-control" required="" type="text">
+                                        <input name="identification" placeholder="Número de Cédula" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Número de Cédula'" class="common-input mb-20 form-control" required="" type="text">
+                                        <input name="email" placeholder="Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" class="common-input mb-20 form-control" required="" type="email">
+                                        <input name="phone" placeholder="Teléfono de contacto" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Teléfono de contacto'" class="common-input mb-20 form-control" required="" type="text">
+                                    
+                                    <input name="address" placeholder="Dirección" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ciudad'" class="common-input mb-20 form-control" required="" type="text">							</div>
+                                <div class="container text-center"><button class="primary-btn btn-sm " type="submit">Solicítalo ahora <span style="display: none;" class="fas fa-spinner fa-spin"></span></button></div>
+                            </form>
+                            <div class="answer">
+                                <div style="display: none;" class="success">
+                                    <div class="alert alert-success" role="alert">
+                                        Formulario enviado con éxito. Uno de nuestros representantes se comunicará pronto contigo.
+                                    </div>
+                                </div>
+                                <div style="display: none;" class="error">
+                                    <div class="alert alert-danger" role="alert">
+                                        Ups! Formulario no enviado, vuelva a intentar nuevamente.
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--End Formulario-->
+                    </div>
+    
+                    <!--<div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>-->
+                </div>
+            </div>
+           <div class="col-1"></div>
+        </div><!--Fin Modal Motorola G5 Plus -->
+</div>
+<script type="text/javascript">
+			new Vue({
+  el: '#phones',
+  data: {
+    slides: 1
+  },
+  components: {
+    'carousel-3d': Carousel3d.Carousel3d,
+    'slide': Carousel3d.Slide
+  }
+ 
+})
+
+
+
+	</script>
+
+		<script type="text/javascript">
+        var $forms = $('.contact-form');
+        $forms.submit(function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            sendLead(event)
+        })
+
+        const sendLead = function (event) {
+            var $target = $(event.target)
+            var formData = $target.serializeArray()
+            $target.find('.fa-spinner').show()
+            formData.push({name: 'equipo', value: event.target.id})
+            $.ajax({
+                type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+                url: 'sender.php', // the url where we want to POST
+                data: formData, // our data object
+                dataType: 'json', // what type of data do we expect back from the server
+                encode: true,
+                crossDomain: false
+            }).done(function (data) {
+                if (data === 0) {
+                    $target.hide()
+                    $target.parent().find('.success').show()
+                } else {
+                    $target.hide()
+                    $target.parent().find('.error').show()
+                }
+            }).fail(function () {
+                $target.hide()
+                $target.parent().find('.error').show()
+            })
+        }
+
+
+	</script>
+</body>
+</html>
